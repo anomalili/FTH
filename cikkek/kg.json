@@ -1,0 +1,47 @@
+{
+    "szerzo": "Kovács Gréta:",
+    "cimek": "Mi az a TeSzedd!?",
+    "tema": {
+      "bekezdes":  "A TeSzedd! – Önkéntesen a tiszta Magyarországért akció. Hazánk legnagyobb önkéntes mozgalma. Idén immár kilencedik alkalommal valósul meg. A szemétgyűjtési akció keretében szerte az országban „nagytakarítanak” a TeSzedd! önkéntesei. Azért szervezzük meg ezt a mozgalmat minden évben, hogy közösen megtisztítsuk szűkebb-tágabb környezetünket.",
+      "kep": 
+        {
+
+          "eleres": "kepek/teszedd/kep1.jpg"
+
+        }
+      
+    }
+  },
+  
+  { "cimek": "VÍZCSEPP ÖSSZMŰVÉSZETI PÁLYÁZAT 2022.",
+    "tema": {
+      "bekezdes": [
+        "A pályázat a 2022. évi Fenntarthatósági Témahét keretében kerül meghirdetésre. A pályázat célja a diákok szemléletformálása vízhez kapcsolódó művészeti alkotások készítésével. Benyújtható pályázatok: rajz, fotó, szépirodalmi mű, zenemű, képregény, infografika, kisfilm."
+      ],
+      "kep": 
+        {
+
+          "eleres": "kepek/teszedd/kep2.jpg"
+
+        }
+      
+    }
+  },
+  {
+    "szerzo": "",
+    "cimek": [
+      "KERTKÓSTOLGATÓ PÁLYÁZAT"
+    ],
+    "tema": {
+      "bekezdes": [
+        "A pályázat célja, hogy az iskolás csoportok egy saját tervezésű legalább 1 m2 iskolakertet hozzanak létre. Az iskolakertbe olyan növények ültetését várjuk, amelyek az a fenntarthatóságot szolgálják. Az iskolakert létrehozását dokumentálni kell a tervezéstől a kivitelezésig"
+      ],
+      "kep": 
+        {
+
+          "eleres": "kepek/teszedd/kep3.jpg"
+
+        }
+      
+    }
+  }
