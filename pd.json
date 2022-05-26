@@ -1,0 +1,24 @@
+{
+    "cikkek": [
+        {
+            "szerzo": "",
+            "cimek": "PLUSZ érdekességek, alternatívák, lépések a hulladékmentes(ebb) jövőnk felé.",
+            "tema": {
+                "alcimekek": "",
+                "bekezdes": [
+                    "Neked is fontos a fenntarthatóság? Rengeteg lehetőséged van tenni a környezetedért. Nagyon fontos ha már egy alternatívát kiváltasz, már azzal is nagyon sokat tehetsz környezeted egészségéért. Hulladékmentes alternatíva az egyszer használatos, eldobható tárgyak helyett:"
+                ],
+                "felsorolas1": "Műanyag zacskó helyett vászontáskát használj!",
+                "felsorolas2": "Elviteles, automatás kávéhoz saját termosz vagy műanyag poharat használni",
+                "felsorolas3": "PET-palackos italok helyett használj saját kulacsot!",
+                "felsorolas4": "A zöldségesnél, pékségben használatos leheletvékony kisméretű műanyag zacskók helyett használj zsinóros vászonzsákokat! ",
+                "felsorolas5": "Műanyag fogkefék helyett használj, fanyelű természetes sörtéjűt",
+                "felsorolas6": "Eldobható műanyag borotvák helyett használj hagyományos fém biztonsági borotvát cserélhető borotvapengékkel. ",
+                "felsorolas7": "Sminklemosó és vattakorongok helyett, használj mosható arctisztító párnákat!",
+                "felsorolas8": "Műanyag szívószál helyett papír szívószálat használj!",
+                "felsorolas9": "Műanyag evőeszközök helyett használj fa vagy fém evőeszközöket!",
+                "felsorolas10": "Mesterséges illatok helyett frissítsd otthonod levegőjét inkább természetes illóolajokkal."
+            }
+        }
+    ]
+}
