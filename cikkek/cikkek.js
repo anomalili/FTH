@@ -151,6 +151,7 @@ function megjelenit(tomb) {
 
 
 function myKAV(tomb) {
+    console.log("fvds");
     tomb.forEach(element => {
         for (const key in element) {
             if (key.includes("szerzo")) {
