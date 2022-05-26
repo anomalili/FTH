@@ -1,5 +1,7 @@
 {
-    "szerzo": "Oláh Barbara:",
+    "cikkek": [
+      {
+    "szerzo": "",
     "cimek": [
       "A fenntarthatóság fogalmai:"
     ],
@@ -32,4 +34,4 @@
       "bekezdes": "Tisztességes, átlátható vállalati működés, „fair trade”.Környezeti terhelés csökkentése pl. CO2 kibocsátás minimalizálása és papírmentes iroda révén.Emberközpontúság mind a kollégák, mind az ügyfelek tekintetében.Társadalmi szerepvállalás fontossága."
     },
     "link": "https://vitafutura.hu/mit-jelent-a-fenntarthatosag/"
-  }
+  }]}

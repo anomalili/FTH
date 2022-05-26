@@ -1,33 +1,82 @@
 article p {
-    
+
     text-align: justify;
     font-family: serif;
-    font-size: 15px;
+    font-size: 20px;
     color: darkslategrey;
     padding: 10px;
     width: fit-content;
     float: left;
-    
+
 }
 
-article {
-  
-    background-color: whitesmoke;
+article {}
+
+body {
+    background-color: white;
 }
 
 
 
-li  {float: initial; width: fit-content; margin-left: 50px; padding-right: 30px;}
+li {
+    float: initial;
+    width: fit-content;
+    margin-left: 50px;
+    padding-right: 30px;
+}
 
-main {max-width: 900px; margin: auto;}
-section {margin: 10px; padding: 20px; width: fit-content;}
+main {
+    max-width: 900px;
+    margin: auto;
+}
 
-.kepek img{width: 100%; float: left; max-width: 350px; margin-left: 17px; padding: 40px; padding-top: 1px;} 
+section {
+    margin: 10px;
+    padding: 20px;
+    width: fit-content;
+}
 
-.cim {font-size: 18px; padding-top: 0.1px;  margin: auto; color: darkolivegreen; width: fit-content;
-     text-align: center;}
+.kepek img {
+    width: 100%;
+    float: left;
+    max-width: 350px;
+    margin-left: 17px;
+    padding: 40px;
+    padding-top: 1px;
+}
 
-.szerzo {font-size: 18px; padding-top: 40px; color:slategrey; font-family: serif;}
+.cim {
+    font-size: 23px;
+    padding-top: 0.1px;
+    margin: auto;
+    color: darkolivegreen;
+    width: fit-content;
+    text-align: center;
+}
 
-.gombok button {width: 120px; padding: 10px; margin: 10px;}
-.gombok li {display: block;}
+.szerzo {
+    font-size: 18px;
+    padding-top: 40px;
+    color: slategrey;
+    font-family: serif;
+}
+
+article a {
+    text-decoration: none;
+    border: 1px solid;
+    margin: 10px;
+    margin: auto;
+    font-size: 23px;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+article a:visited {
+    color: black;
+}
+
+article a:active {
+    color: green;
+}

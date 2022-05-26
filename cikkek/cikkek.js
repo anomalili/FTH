@@ -88,7 +88,7 @@ var txt = "";
 function init() {
 
     var tomb = [];
-    fetch('bevezeto.json')
+    fetch('cikkek.json')
         .then(res => res.json())
         .then((out) => {
             console.log('Output: ', out);
@@ -99,8 +99,6 @@ function init() {
  */            megjelenit(tomb);
 
         }).catch(err => console.error(err));
-
-
 
 }
 
@@ -131,17 +129,48 @@ function megjelenit(tomb) {
                 console.log(element[key])
 
                 for (const key2 in element[key]) {
+                    /* 
+                     txt += `<span>${element[key]}</span>` 
+  */
+                    if (key2.includes("felsorolas")) {
 
-
-                    if (key2.includes("bekezdes")) {
-                        txt += `<section class="alcim"><span>${element[key][key2]}</span></section>`
-                        document.querySelectorAll('bevezeto p')[0].innerHTML = txt
+                        txt += "<ul>"
+                        txt += `<li><i>${element[key][key2]}</i></li>`
+                        txt += "</ul>"
 
                     }
 
+                    if (key2.includes("bekezdes")) {
+                        txt += `<section class="alcim"><span>${element[key][key2]}</span></section>`
+                        document.querySelectorAll('article p')[0].innerHTML = txt
+
+                    }
+                    if (key2.includes("kep")) {
+                        for (const key3 in element[key][key2]) {
+
+                            txt += `<div class="kepek"><img src="${element[key][key2].eleres}"></div>`
+
+                            //document.querySelectorAll('article img')[0].innerHTML = txt
+
+
+
+                        }
+
+
+
+                    }
                 }
             }
+
+
+
+
+
         }
+
+
+
+
     }
     )
 
@@ -150,609 +179,7 @@ function megjelenit(tomb) {
 
 
 
-function myKAV(tomb) {
-    console.log("fvds");
-    tomb.forEach(element => {
-        for (const key in element) {
-            if (key.includes("szerzo")) {
 
-                txt += `<section class = "szerzo"><span>${element[key]}</span></section>`
-                document.querySelectorAll('article p')[0].innerHTML = txt;
-            }
-
-            if (key.includes("cimek")) {
-                txt += `<section class = "cim"><span><b>${element[key]}</b></span></section>`
-                /* txt += key  */
-                /*  document.querySelectorAll('article h1')[0].innerHTML = txt */
-
-            }
-
-
-            if (key.includes("tema")) {
-                console.log(element[key])
-
-                for (const key2 in element[key]) {
-                    /* 
-                     txt += `<span>${element[key]}</span>` 
-    */
-                    if (key2.includes("felsorolas")) {
-
-                        txt += "<ul>"
-                        txt += `<li><i>${element[key][key2]}</i></li>`
-                        txt += "</ul>"
-
-                    }
-
-                    if (key2.includes("bekezdes")) {
-                        txt += `<section class="alcim"><span>${element[key][key2]}</span></section>`
-                        document.querySelectorAll('article p')[0].innerHTML = txt
-
-                    }
-                    if (key2.includes("kep")) {
-                        for (const key3 in element[key][key2]) {
-
-                            txt += `<div class="kepek"><img src="${element[key][key2].eleres}"></div>`
-
-                            //document.querySelectorAll('article img')[0].innerHTML = txt
-
-
-
-                        }
-
-
-
-                    }
-                }
-            }
-
-
-
-
-
-        }
-
-
-
-
-    }
-    )
-}
-
-function myVZS(tomb) {
-    tomb.forEach(element => {
-        for (const key in element) {
-            if (key.includes("szerzo")) {
-
-                txt += `<section class = "szerzo"><span>${element[key]}</span></section>`
-                document.querySelectorAll('article p')[0].innerHTML = txt;
-            }
-
-            if (key.includes("cimek")) {
-                txt += `<section class = "cim"><span><b>${element[key]}</b></span></section>`
-                /* txt += key  */
-                /*  document.querySelectorAll('article h1')[0].innerHTML = txt */
-
-            }
-
-
-            if (key.includes("tema")) {
-                console.log(element[key])
-
-                for (const key2 in element[key]) {
-                    /* 
-                     txt += `<span>${element[key]}</span>` 
-    */
-                    if (key2.includes("felsorolas")) {
-
-                        txt += "<ul>"
-                        txt += `<li><i>${element[key][key2]}</i></li>`
-                        txt += "</ul>"
-
-                    }
-
-                    if (key2.includes("bekezdes")) {
-                        txt += `<section class="alcim"><span>${element[key][key2]}</span></section>`
-                        document.querySelectorAll('.vzs p')[0].innerHTML = txt
-
-                    }
-                    if (key2.includes("kep")) {
-                        for (const key3 in element[key][key2]) {
-
-                            txt += `<div class="kepek"><img src="${element[key][key2].eleres}"></div>`
-
-                            //document.querySelectorAll('article img')[0].innerHTML = txt
-
-
-
-                        }
-
-
-
-                    }
-                }
-            }
-
-
-
-
-
-        }
-
-
-
-
-    }
-    )
-}
-
-function myPD(tomb) {
-    tomb.forEach(element => {
-        for (const key in element) {
-            if (key.includes("szerzo")) {
-
-                txt += `<section class = "szerzo"><span>${element[key]}</span></section>`
-                document.querySelectorAll('article p')[0].innerHTML = txt;
-            }
-
-            if (key.includes("cimek")) {
-                txt += `<section class = "cim"><span><b>${element[key]}</b></span></section>`
-                /* txt += key  */
-                /*  document.querySelectorAll('article h1')[0].innerHTML = txt */
-
-            }
-
-
-            if (key.includes("tema")) {
-                console.log(element[key])
-
-                for (const key2 in element[key]) {
-                    /* 
-                     txt += `<span>${element[key]}</span>` 
-    */
-                    if (key2.includes("felsorolas")) {
-
-                        txt += "<ul>"
-                        txt += `<li><i>${element[key][key2]}</i></li>`
-                        txt += "</ul>"
-
-                    }
-
-                    if (key2.includes("bekezdes")) {
-                        txt += `<section class="alcim"><span>${element[key][key2]}</span></section>`
-                        document.querySelectorAll('article p')[0].innerHTML = txt
-
-                    }
-                    if (key2.includes("kep")) {
-                        for (const key3 in element[key][key2]) {
-
-                            txt += `<div class="kepek"><img src="${element[key][key2].eleres}"></div>`
-
-                            //document.querySelectorAll('article img')[0].innerHTML = txt
-
-
-
-                        }
-
-
-
-                    }
-                }
-            }
-
-
-
-
-
-        }
-
-
-
-
-    }
-    )
-}
-
-function myTEB(tomb) {
-    tomb.forEach(element => {
-        for (const key in element) {
-            if (key.includes("szerzo")) {
-
-                txt += `<section class = "szerzo"><span>${element[key]}</span></section>`
-                document.querySelectorAll('article p')[0].innerHTML = txt;
-            }
-
-            if (key.includes("cimek")) {
-                txt += `<section class = "cim"><span><b>${element[key]}</b></span></section>`
-                /* txt += key  */
-                /*  document.querySelectorAll('article h1')[0].innerHTML = txt */
-
-            }
-
-
-            if (key.includes("tema")) {
-                console.log(element[key])
-
-                for (const key2 in element[key]) {
-                    /* 
-                     txt += `<span>${element[key]}</span>` 
-    */
-                    if (key2.includes("felsorolas")) {
-
-                        txt += "<ul>"
-                        txt += `<li><i>${element[key][key2]}</i></li>`
-                        txt += "</ul>"
-
-                    }
-
-                    if (key2.includes("bekezdes")) {
-                        txt += `<section class="alcim"><span>${element[key][key2]}</span></section>`
-                        document.querySelectorAll('article p')[0].innerHTML = txt
-
-                    }
-                    if (key2.includes("kep")) {
-                        for (const key3 in element[key][key2]) {
-
-                            txt += `<div class="kepek"><img src="${element[key][key2].eleres}"></div>`
-
-                            //document.querySelectorAll('article img')[0].innerHTML = txt
-
-
-
-                        }
-
-
-
-                    }
-                }
-            }
-
-
-
-
-
-        }
-
-
-
-
-    }
-    )
-}
-
-function myKG(tomb) {
-    tomb.forEach(element => {
-        for (const key in element) {
-            if (key.includes("szerzo")) {
-
-                txt += `<section class = "szerzo"><span>${element[key]}</span></section>`
-                document.querySelectorAll('article p')[0].innerHTML = txt;
-            }
-
-            if (key.includes("cimek")) {
-                txt += `<section class = "cim"><span><b>${element[key]}</b></span></section>`
-                /* txt += key  */
-                /*  document.querySelectorAll('article h1')[0].innerHTML = txt */
-
-            }
-
-
-            if (key.includes("tema")) {
-                console.log(element[key])
-
-                for (const key2 in element[key]) {
-                    /* 
-                     txt += `<span>${element[key]}</span>` 
-    */
-                    if (key2.includes("felsorolas")) {
-
-                        txt += "<ul>"
-                        txt += `<li><i>${element[key][key2]}</i></li>`
-                        txt += "</ul>"
-
-                    }
-
-                    if (key2.includes("bekezdes")) {
-                        txt += `<section class="alcim"><span>${element[key][key2]}</span></section>`
-                        document.querySelectorAll('article p')[0].innerHTML = txt
-
-                    }
-                    if (key2.includes("kep")) {
-                        for (const key3 in element[key][key2]) {
-
-                            txt += `<div class="kepek"><img src="${element[key][key2].eleres}"></div>`
-
-                            //document.querySelectorAll('article img')[0].innerHTML = txt
-
-
-
-                        }
-
-
-
-                    }
-                }
-            }
-
-
-
-
-
-        }
-
-
-
-
-    }
-    )
-}
-
-function myBBR(tomb) {
-    tomb.forEach(element => {
-        for (const key in element) {
-            if (key.includes("szerzo")) {
-
-                txt += `<section class = "szerzo"><span>${element[key]}</span></section>`
-                document.querySelectorAll('article p')[0].innerHTML = txt;
-            }
-
-            if (key.includes("cimek")) {
-                txt += `<section class = "cim"><span><b>${element[key]}</b></span></section>`
-                /* txt += key  */
-                /*  document.querySelectorAll('article h1')[0].innerHTML = txt */
-
-            }
-
-
-            if (key.includes("tema")) {
-                console.log(element[key])
-
-                for (const key2 in element[key]) {
-                    /* 
-                     txt += `<span>${element[key]}</span>` 
-    */
-                    if (key2.includes("felsorolas")) {
-
-                        txt += "<ul>"
-                        txt += `<li><i>${element[key][key2]}</i></li>`
-                        txt += "</ul>"
-
-                    }
-
-                    if (key2.includes("bekezdes")) {
-                        txt += `<section class="alcim"><span>${element[key][key2]}</span></section>`
-                        document.querySelectorAll('article p')[0].innerHTML = txt
-
-                    }
-                    if (key2.includes("kep")) {
-                        for (const key3 in element[key][key2]) {
-
-                            txt += `<div class="kepek"><img src="${element[key][key2].eleres}"></div>`
-
-                            //document.querySelectorAll('article img')[0].innerHTML = txt
-
-
-
-                        }
-
-
-
-                    }
-                }
-            }
-
-
-
-
-
-        }
-
-
-
-
-    }
-    )
-}
-
-function myPVK(tomb) {
-    tomb.forEach(element => {
-        for (const key in element) {
-            if (key.includes("szerzo")) {
-
-                txt += `<section class = "szerzo"><span>${element[key]}</span></section>`
-                document.querySelectorAll('article p')[0].innerHTML = txt;
-            }
-
-            if (key.includes("cimek")) {
-                txt += `<section class = "cim"><span><b>${element[key]}</b></span></section>`
-                /* txt += key  */
-                /*  document.querySelectorAll('article h1')[0].innerHTML = txt */
-
-            }
-
-
-            if (key.includes("tema")) {
-                console.log(element[key])
-
-                for (const key2 in element[key]) {
-                    /* 
-                     txt += `<span>${element[key]}</span>` 
-    */
-                    if (key2.includes("felsorolas")) {
-
-                        txt += "<ul>"
-                        txt += `<li><i>${element[key][key2]}</i></li>`
-                        txt += "</ul>"
-
-                    }
-
-                    if (key2.includes("bekezdes")) {
-                        txt += `<section class="alcim"><span>${element[key][key2]}</span></section>`
-                        document.querySelectorAll('article p')[0].innerHTML = txt
-
-                    }
-                    if (key2.includes("kep")) {
-                        for (const key3 in element[key][key2]) {
-
-                            txt += `<div class="kepek"><img src="${element[key][key2].eleres}"></div>`
-
-                            //document.querySelectorAll('article img')[0].innerHTML = txt
-
-
-
-                        }
-
-
-
-                    }
-                }
-            }
-
-
-
-
-
-        }
-
-
-
-
-    }
-    )
-}
-
-function myOB(tomb) {
-    tomb.forEach(element => {
-        for (const key in element) {
-            if (key.includes("szerzo")) {
-
-                txt += `<section class = "szerzo"><span>${element[key]}</span></section>`
-                document.querySelectorAll('article p')[0].innerHTML = txt;
-            }
-
-            if (key.includes("cimek")) {
-                txt += `<section class = "cim"><span><b>${element[key]}</b></span></section>`
-                /* txt += key  */
-                /*  document.querySelectorAll('article h1')[0].innerHTML = txt */
-
-            }
-
-
-            if (key.includes("tema")) {
-                console.log(element[key])
-
-                for (const key2 in element[key]) {
-                    /* 
-                     txt += `<span>${element[key]}</span>` 
-    */
-                    if (key2.includes("felsorolas")) {
-
-                        txt += "<ul>"
-                        txt += `<li><i>${element[key][key2]}</i></li>`
-                        txt += "</ul>"
-
-                    }
-
-                    if (key2.includes("bekezdes")) {
-                        txt += `<section class="alcim"><span>${element[key][key2]}</span></section>`
-                        document.querySelectorAll('article p')[0].innerHTML = txt
-
-                    }
-                    if (key2.includes("kep")) {
-                        for (const key3 in element[key][key2]) {
-
-                            txt += `<div class="kepek"><img src="${element[key][key2].eleres}"></div>`
-
-                            //document.querySelectorAll('article img')[0].innerHTML = txt
-
-
-
-                        }
-
-
-
-                    }
-                }
-            }
-
-
-
-
-
-        }
-
-
-
-
-    }
-    )
-}
-
-function myZV(tomb) {
-    tomb.forEach(element => {
-        for (const key in element) {
-            if (key.includes("szerzo")) {
-
-                txt += `<section class = "szerzo"><span>${element[key]}</span></section>`
-                document.querySelectorAll('article p')[0].innerHTML = txt;
-            }
-
-            if (key.includes("cimek")) {
-                txt += `<section class = "cim"><span><b>${element[key]}</b></span></section>`
-                /* txt += key  */
-                /*  document.querySelectorAll('article h1')[0].innerHTML = txt */
-
-            }
-
-
-            if (key.includes("tema")) {
-                console.log(element[key])
-
-                for (const key2 in element[key]) {
-                    /* 
-                     txt += `<span>${element[key]}</span>` 
-    */
-                    if (key2.includes("felsorolas")) {
-
-                        txt += "<ul>"
-                        txt += `<li><i>${element[key][key2]}</i></li>`
-                        txt += "</ul>"
-
-                    }
-
-                    if (key2.includes("bekezdes")) {
-                        txt += `<section class="alcim"><span>${element[key][key2]}</span></section>`
-                        document.querySelectorAll('article p')[0].innerHTML = txt
-
-                    }
-                    if (key2.includes("kep")) {
-                        for (const key3 in element[key][key2]) {
-
-                            txt += `<div class="kepek"><img src="${element[key][key2].eleres}"></div>`
-
-                            //document.querySelectorAll('article img')[0].innerHTML = txt
-
-
-
-                        }
-
-
-
-                    }
-                }
-            }
-
-
-
-
-
-        }
-
-
-
-
-    }
-    )
-}
 
 
 

@@ -1,5 +1,7 @@
 {
-    "szerzo": "Vigh Zsófia:",
+    "cikkek": [
+      {
+    "szerzo": "",
     "cimek": "A ZÖLD MARKETING",
     "tema": {
       "bekezdes": "A marketing már a mindennapjaink része, mindenhol találkozhatunk vele és mindig a szemünk előtt van, még ha nem is látjuk, mint egy rejtett reklám. Mindennapunk része, tehát szinte természetessé vált, nem lenne izgalmas és hasznos ezt a természetes dolgot az életünkben zöldebbé tenni?",
@@ -22,4 +24,4 @@
 
       
     }
-  }
+  }]}
